@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>ViewFlow</title>
+        <script type="text/javascript" src="./scripts/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="./scripts/jquery-ui-1.10.3.custom.min.js"></script>
+
+        <script type="text/javascript" src="./scripts/jquery.jsPlumb-1.5.5-min.js"></script>
+        <script type="text/javascript" src="./scripts/jquery.ui.touch-punch.min.js"></script>
+
+        
+
+        <link type="text/css" rel="stylesheet" href="./bptheme/jquery-ui-1.10.3.custom.min.css" />
+        <link type="text/css" rel="stylesheet" href="blueprint.bs.ext.css" />
+        <link type="text/css" rel="stylesheet" href="ViewFlow.css" />
+    </head>
+    <body>
+        
+        <table border="0" style="width: 100%">
+            <tr class="s4-die">
+                <td class="ms-pagebreadcrumb">
+                    <span id="ctl00_PlaceHolderMain_ContentMap"></span>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding: 5px;">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">
+                                <span id="ctl00_PlaceHolderMain_formTitle">ViewFlow - Leave Application Form</span></h3>
+                        </div>
+                        <div class="panel-body">
+                            <div id="ctl00_PlaceHolderMain_bpViewFormUserControl_pnlContent" class="pwLogo controller">
+
+                                <div id="viewflowcontainer">
+                                    <div id="render">
+                                    </div>
+                                    <div class="window" id="ATIDstart" onclick="javascript:showActivityProps('divInfo_ATIDstart', 'start', 'Start');">
+                                        <table style="width: 99%; height: 33px;">
+                                            <tr>
+                                                <td class="actImageStyle">
+                                                    <img src="./images/completed0.gif" alt="Completed" />
+                                                </td>
+                                                <td class="actTextStyle">Start</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="window" id="ATID32" onclick="javascript:showActivityProps('divInfo_ATID32', '32', 'Pending Manager Appoval');">
+                                        <table style="width: 99%; height: 33px;">
+                                            <tr>
+                                                <td class="actImageStyle">
+                                                    <img src="./images/completed0.gif" alt="Completed" />
+                                                </td>
+                                                <td class="actTextStyle">Pending Manager Appoval</td>
+                                            </tr>
+                                        </table>
+                                        <div style="display: none" id="divInfo_ATID32">
+                                            <fieldset>
+                                                <legend>Activity Details</legend>
+                                                <table cellpadding="0" cellspacing="0" width="99%" border="0">
+                                                    <tr>
+                                                        <td rowspan="4" style="width: 80px; height: 65px;">
+                                                            <img src="./Images/AccessContacts.png" alt="Client Activity" />
+                                                        </td>
+                                                        <td>Name:
+                                                        </td>
+                                                        <td>Pending Manager Appoval</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Status:
+                                                        </td>
+                                                        <td>Pending Manager Appoval</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Internal Status:
+                                                        </td>
+                                                        <td>Pending Manager Appoval</td>
+                                                    </tr>
+                                                </table>
+                                            </fieldset>
+                                            <fieldset>
+                                                <legend>Partcipants</legend>
+                                                <table cellpadding="0" cellspacing="0" width="99%" border="0" class="ieGridHeader">
+                                                    <tr>
+                                                        <th>Name</th>
+                                                        <th>Department</th>
+                                                        <th>Designation</th>
+                                                        <th>Action Performed</th>
+                                                        <th>Action Date</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="ieGridRow"></td>
+                                                        <td class="ieGridRow"></td>
+                                                        <td class="ieGridRow"></td>
+                                                        <td class="ieGridRow"></td>
+                                                        <td class="ieGridRow"></td>
+                                                    </tr>
+                                                </table>
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                    <div class="window" id="ATID33" onclick="javascript:showActivityProps('divInfo_ATID33', '33', 'Pending Employee Review');">
+                                        <table style="width: 99%; height: 33px;">
+                                            <tr>
+                                                <td class="actImageStyle">
+                                                    <img src="./images/ncompleted.gif" alt="Completed" />
+                                                </td>
+                                                <td class="actTextStyle">Pending Employee Review</td>
+                                            </tr>
+                                        </table>
+                                        <div style="display: none" id="divInfo_ATID33">
+                                            <fieldset>
+                                                <legend>Activity Details</legend>
+                                                <table cellpadding="0" cellspacing="0" width="99%" border="0">
+                                                    <tr>
+                                                        <td rowspan="4" style="width: 80px; height: 65px;">
+                                                            <img src="./Images/AccessContacts.png" alt="Client Activity" />
+                                                        </td>
+                                                        <td>Name:
+                                                        </td>
+                                                        <td>Pending Employee Review</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Status:
+                                                        </td>
+                                                        <td>Pending Employee Review</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Internal Status:
+                                                        </td>
+                                                        <td>Pending Employee Review</td>
+                                                    </tr>
+                                                </table>
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                    <div class="window" id="ATID34" onclick="javascript:showActivityProps('divInfo_ATID34', '34', 'Pending HR Acceptance');">
+                                        <table style="width: 99%; height: 33px;">
+                                            <tr>
+                                                <td class="actImageStyle">
+                                                    <img src="./images/rGears.gif" alt="Completed" />
+                                                </td>
+                                                <td class="actTextStyle">Pending HR Acceptance</td>
+                                            </tr>
+                                        </table>
+                                        <div style="display: none" id="divInfo_ATID34">
+                                            <fieldset>
+                                                <legend>Activity Details</legend>
+                                                <table cellpadding="0" cellspacing="0" width="99%" border="0">
+                                                    <tr>
+                                                        <td rowspan="4" style="width: 80px; height: 65px;">
+                                                            <img src="./Images/AccessContacts.png" alt="Client Activity" />
+                                                        </td>
+                                                        <td>Name:
+                                                        </td>
+                                                        <td>Pending HR Acceptance</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Status:
+                                                        </td>
+                                                        <td>Pending HR Acceptance</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Internal Status:
+                                                        </td>
+                                                        <td>Pending HR Acceptance</td>
+                                                    </tr>
+                                                </table>
+                                            </fieldset>
+                                            <fieldset>
+                                                <legend>Partcipants</legend>
+                                                <table cellpadding="0" cellspacing="0" width="99%" border="0" class="ieGridHeader">
+                                                    <tr>
+                                                        <th>Name</th>
+                                                        <th>Department</th>
+                                                        <th>Designation</th>
+                                                        <th>Action Performed</th>
+                                                        <th>Action Date</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="ieGridRow">Demo User 1</td>
+                                                        <td class="ieGridRow">AS</td>
+                                                        <td class="ieGridRow">Test User 1</td>
+                                                        <td class="ieGridRow"></td>
+                                                        <td class="ieGridRow"></td>
+                                                    </tr>
+                                                </table>
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                    <div class="window" id="ATID35" onclick="javascript:showActivityProps('divInfo_ATID35', '35', 'Accepted By HR');">
+                                        <table style="width: 99%; height: 33px;">
+                                            <tr>
+                                                <td class="actImageStyle">
+                                                    <img src="./images/ncompleted.gif" alt="Completed" />
+                                                </td>
+                                                <td class="actTextStyle">Accepted By HR</td>
+                                            </tr>
+                                        </table>
+                                        <div style="display: none" id="divInfo_ATID35">
+                                            <fieldset>
+                                                <legend>Activity Details</legend>
+                                                <table cellpadding="0" cellspacing="0" width="99%" border="0">
+                                                    <tr>
+                                                        <td rowspan="4" style="width: 80px; height: 65px;">
+                                                            <img src="./Images/AccessProjects.png" alt="Server Activity" />
+                                                        </td>
+                                                        <td>Name:
+                                                        </td>
+                                                        <td>Accepted By HR</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Status:
+                                                        </td>
+                                                        <td>Accepted By HR</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Internal Status:
+                                                        </td>
+                                                        <td>Accepted By HR</td>
+                                                    </tr>
+                                                </table>
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                    <div class="window" id="ATID36" onclick="javascript:showActivityProps('divInfo_ATID36', '36', 'Withdrawn');">
+                                        <table style="width: 99%; height: 33px;">
+                                            <tr>
+                                                <td class="actImageStyle">
+                                                    <img src="./images/ncompleted.gif" alt="Completed" />
+                                                </td>
+                                                <td class="actTextStyle">Withdrawn</td>
+                                            </tr>
+                                        </table>
+                                        <div style="display: none" id="divInfo_ATID36">
+                                            <fieldset>
+                                                <legend>Activity Details</legend>
+                                                <table cellpadding="0" cellspacing="0" width="99%" border="0">
+                                                    <tr>
+                                                        <td rowspan="4" style="width: 80px; height: 65px;">
+                                                            <img src="./Images/AccessProjects.png" alt="Server Activity" />
+                                                        </td>
+                                                        <td>Name:
+                                                        </td>
+                                                        <td>Withdrawn</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Status:
+                                                        </td>
+                                                        <td>Withdrawn</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Internal Status:
+                                                        </td>
+                                                        <td>Withdrawn</td>
+                                                    </tr>
+                                                </table>
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                    <div class="window" id="ATIDend" onclick="javascript:showActivityProps('divInfo_ATIDend', 'end', 'End');">
+                                        <table style="width: 99%; height: 33px;">
+                                            <tr>
+                                                <td class="actImageStyle">
+                                                    <img src="./images/PendingActivity.gif" alt="Completed" />
+                                                </td>
+                                                <td class="actTextStyle">End</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <script type="text/javascript">
+                                        function showActivityProps(divId, aId, title){
+                                            if (aId != 'start' && aId != 'end'){
+                                              if ( $("#" + divId) != undefined)
+                                              {
+                                                ShowModalDialogWithClose(divId, title);
+                                              }
+                                            }
+                                        }
+                                </script>
+
+                                <style type="text/css">
+                                              #ATIDstart
+                                                {
+                                                  top: 25px;left: 50px;
+                                                  background-color: #ecf7dc;
+                                                }
+                                              #ATID32
+                                                {
+                                                  top: 125px;left: 50px;
+                                                  background-color: #ecf7dc;
+                                                }
+                                              #ATID33
+                                                {
+                                                  top: 125px;left: 500px;
+                                                  background-color: #d5e6fc;
+                                                }
+                                              #ATID34
+                                                {
+                                                  top: 225px;left: 50px;
+                                                  background-color: #e3c351;
+                                                }
+                                              #ATID35
+                                                {
+                                                  top: 325px;left: 50px;
+                                                  background-color: #d5e6fc;
+                                                }
+                                              #ATID36
+                                                {
+                                                  top: 225px;left:500px;
+                                                  background-color: #d5e6fc;
+                                                }
+                                              #ATIDend
+                                                {
+                                                  top: 425px;left: 50px;
+                                                  background-color: lightgray;
+                                                }
+                                              .controller {                                              height: 600px !important;                    }
+                                                                              .startLabel {                                              left: 46px !important;                                              top: 75px !important;                                          }
+						                                                      .a1914Label {                                              left: 495px !important;                                              top: 75px !important;                                          }
+						                                                      .a1913Label {                                              left: 400px !important;                                              top: 120px !important;                                          }
+						                                                      .a1912Label {                                              left: 215px !important;                                            top: 205px !important;                                       }
+						                                                      .a1915Label {                                              left: 665px !important;                                              top: 205px !important;                                       }
+						                                                      .a1916Label {                                              left: 215px !important;                                            top: 305px !important;                                         }
+						                                                      .a1719Label {                                              left: 215px !important;                                              top: 405px !important;                                         }
+						                                                      .a1720Label {                                              left: 665px !important;                                              top: 405px !important;                                       }
+                                </style>
+                                
+                                <script type="text/javascript" src="./scripts/jPlumbBind.js"></script>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </td>
+            </tr>
+
+        </table>
+
+
+    </body>
+</html>

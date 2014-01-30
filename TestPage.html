@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title></title>
+        <script type="text/javascript" src="/scripts/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                var jsdata = [{ "text": "Reference", "datafield": "ApplicationReferenceNumber", "width": "15%" },{ "text": "Path", "datafield": "ProcessPath", "width": "10%", "cellsrenderer": "<a href='javascript' onclick='javascript:window.open(''http://www.google.com'');'>Test</a>" },{ "text": "Process", "datafield": "MetadataName", "width": "20%" },{ "text": "MetadataDescription", "datafield": "MetadataDescription", "hidden": "true", "width": "auto" },{ "text": "MetadataId", "datafield": "MetadataId", "hidden": "true", "width": "auto" },{ "text": "InstanceId", "datafield": "InstanceId", "hidden": "true", "width": "auto" },{ "text": "Status", "datafield": "InternalStatus", "width": "15%" },{ "text": "Submitted On", "datafield": "SubmittedOn", "width": "15%" },{ "text": "Submitted By", "datafield": "SubmittedBy", "width": "23%" }];
+
+                    var parsedJsData = $.parseJSON(JSON.stringify(jsdata));
+                alert(parsedJsData.text);
+            });
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

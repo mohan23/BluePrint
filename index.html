@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title></title>
+        <link href="blueprint.bs.ext.css" rel="stylesheet" />
+        <script type="text/javascript" src="/Scripts/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="/Scripts/bootstrap.min.js"></script>
+        
+    </head>
+    <body>
+        <form method="post" action="">
+            <div class="formContainer hide">
+                <div class="icon-error">
+                    <span>This is an Error Style</span>
+                </div>
+
+                <div class="icon-success">
+                    <span>This is an success Style</span>
+                </div>
+
+                <div class="icon-warning">
+                    <span>This is an warning Style</span>
+                </div>
+
+                <br />
+                <table style="width: 100%">
+                    <tr>
+                        <td>* Indicates fields are compulsory</td>
+                        <td><img src="/_layout/image/hpring.png" alt="Print" /></td>
+                        <td>
+                            <div class="col-xs-8 content-right" style="text-align: right;">
+                                <div class="btn-group">
+                                    <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown">
+                                        Submit Actions <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu content-left">
+                                        <li><a href="#"><i class="glyphicon glyphicon-circle-arrow-right"></i>Action</a></li>
+                                        <li><a href="#">Action3</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Action 5 </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="actionButton-right">
+                                <button type="button" class="btn btn-sm btn-default">Test 1</button>
+                                <button type="button" class="btn btn-sm btn-primary">Test 2</button>
+                                <button type="button" class="button-actions-primary">Test 3</button>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+
+                <div class="formRow">
+                    <div class="col-xs-6">
+                        <fieldset>
+                            <legend>Checked List Box</legend>
+                            <label class="checkbox-inline">
+                                    <input type="checkbox" id="inlineCheckbox1" value="option1"> Approvers
+                                </label>
+                                <label class="checkbox-inline">
+                                    <input type="checkbox" id="inlineCheckbox2" value="option2"> BluePrint for Emerio Members
+                                </label>
+                                <label class="checkbox-inline">
+                                    <input type="checkbox" id="inlineCheckbox3" value="option3"> BluePrint for Emerio Owners
+                                </label>
+                                <label class="checkbox-inline">
+                                    <input type="checkbox" id="inlineCheckbox5" value="option1"> BluePrint for Emerio Visitors
+                                </label>
+                                <label class="checkbox-inline">
+                                    <input type="checkbox" id="inlineCheckbox4" value="option2"> Designers
+                                </label>
+                                <label class="checkbox-inline">
+                                    <input type="checkbox" id="inlineCheckbox6" value="option3"> Hierarchy Managers
+                                </label>
+                                <label class="checkbox-inline">
+                                    <input type="checkbox" id="inlineCheckbox5" value="option1"> Quick Deploy Users
+                                </label>
+                                <label class="checkbox-inline">
+                                    <input type="checkbox" id="inlineCheckbox4" value="option2"> Restricted Readers
+                                </label>
+                                <label class="checkbox-inline">
+                                    <input type="checkbox" id="inlineCheckbox6" value="option3"> Style Resource Readers
+                                </label>
+                                <label class="checkbox-inline">
+                                    <input type="checkbox" id="inlineCheckbox4" value="option2"> Viewers
+                                </label>
+                               
+                        </fieldset>
+                    </div>
+                    <div class="col-xs-6">
+                        <fieldset>
+                            <legend>Radio Button List</legend>
+                            <label class="radio-inline">
+                                <input type="radio" id="inlineradio1" value="option1"> This is first radio
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" id="inlineradio2" value="option2"> This is Second radio
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" id="inlineradio3" value="option3"> This is Third radio
+                            </label>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+
+            <div class="formContainer hide">
+                <fieldset>
+                    <legend>Legend 1</legend>
+                    <div class="formRow">
+                        <div class="formColLabel">Label 1</div>
+                        <div class="formColControl"><input type="text" /></div>
+                        <div class="formColLabel">Label 2</div>
+                        <div class="formColControl"><input type="text" /></div>
+                    </div>
+                    <div class="formRow">
+                        <div class="formColLabel">Label 1</div>
+                        <div class="formColControl"><input type="text" disabled /></div>
+                        <div class="formColLabel">Label 2</div>
+                        <div class="formColControl"><input type="text" disabled /></div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Legend 2</legend>
+                    <table cellpadding="3" cellspacing="3" width="100%" border="0">
+                        <tr>
+                            <td width="15%"><label>Control 1</label></td>
+                            <td width="30%"><input type="text" value="test data 123" /></td>
+                            <td width="15%"><label>Control 2</label></td>
+                            <td width="30%"><input type="text" /></td>
+                        </tr>
+                        <tr>
+                            <td width="15%"><label>Control 3</label></td>
+                            <td width="30%">
+                                <div class="input-group" style="width: 200px;">
+                                    <input name="ctl00$PlaceHolderMain$bp_DyForm$EndDate" disabled="disabled" id="ctl00_PlaceHolderMain_bp_DyForm_EndDate" type="text" placeholder="DD/MM/YYYY" value="12/04/2013" />
+                                    <span class="input-group-addon">
+                                        <a onclick="javascript:alert('This is an Test')" href="javascript:">
+                                            <img alt="Calendar" src="/images/calendar.gif" />
+                                        </a>
+                                    </span>
+                                </div>
+                            </td>
+                            <td width="15%"><label>Control 4</label></td>
+                            <td width="30%"><input type="text" /></td>
+                        </tr>
+                        <tr>
+                            <td width="15%"><label>Control 5</label></td>
+                            <td width="30%">
+                                <select>
+                                    <option>A</option>
+                                    <option>B</option>
+                                </select>
+                            </td>
+                            <td width="15%"><label>Control 6</label></td>
+                            <td width="30%"><input type="text" /></td>
+                        </tr>
+                    </table>
+                </fieldset>
+                <fieldset>
+                    <legend>Legend 3</legend>
+                    <div class="formRow">
+                        <div class="formColLabel">Label 1</div>
+                        <div class="reqDisplayDiv">:</div>
+                        <div class="formColControl"><input type="text" name="test123" requried /></div>
+                        <div class="formColLabel">Label 2</div>
+                        <div class="reqDisplayDiv">:</div>
+                        <div class="formColControl">
+                        </div>
+                    </div>
+                    <div class="formRow">
+                        <div class="formColLabel">Label 1</div>
+                        <div class="reqDisplayDiv">:</div>
+                        <div class="formColControl"><input type="text" disabled /></div>
+                        <div class="formColLabel">Label 2</div>
+                        <div class="reqDisplayDiv">:</div>
+                        <div class="formColControl"><input type="text" disabled /></div>
+                    </div>
+                </fieldset>
+
+
+            </div>
+
+            <div class="formContainer hide">
+                <div id="testUpdatePanelDiv">
+                    <div class="formRow">
+                        <div class="formColLabel">Remarks/Reason  <font color="red">*</font></div>
+                        <div class="formMaxColControl">
+                            <textarea id="123"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="formContainer">
+
+        <div class="formRow">
+            <div class="col-sm-6">
+                <div class="col-sm-1" style="min-width: 54px;">
+                    <a class="pull-left" href="DatabaseSettings.aspx?id=1b877313-3c9d-4384-9966-f3239749148e">
+                        <img src="http://w12ksp13/_layouts/15/bluePrint/images/DBSettings.jpeg" />
+                    </a>
+                </div>
+                <div class="col-sm-11">
+                    <a href="DatabaseSettings.aspx?id=1b877313-3c9d-4384-9966-f3239749148e">
+                        <h4 class="media-heading">
+                            Database Settings</h4>
+                    </a>
+                    <p>
+                        Configure the database settings used by BluePrint
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="col-sm-1" style="min-width: 54px;">
+                    <a class="pull-left" href="ApplicationSettings.aspx?id=1b877313-3c9d-4384-9966-f3239749148e">
+                        <img src="http://w12ksp13/_layouts/15/bluePrint/images/appsettings.png" />
+                    </a>
+                </div>
+                <div class="col-sm-11">
+                    <a href="ApplicationSettings.aspx?id=1b877313-3c9d-4384-9966-f3239749148e">
+                        <h4 class="media-heading">
+                            BluePrint Application Settings</h4>
+                    </a>
+                    <p>
+                        Configure BluePrint Application Settings using this link
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="formRow">
+            <div class="col-sm-6">
+                <div class="col-sm-1" style="min-width: 54px;">
+                    <a class="pull-left" href="CreateSite.aspx?id=1b877313-3c9d-4384-9966-f3239749148e">
+                        <img src="http://w12ksp13/_layouts/15/blueprint/images/sites_folder.png" />
+                    </a>
+                </div>
+                <div class="col-sm-11">
+                    <a href="CreateSite.aspx?id=1b877313-3c9d-4384-9966-f3239749148e">
+                        <h4 class="media-heading">
+                            Create BluePrint Site</h4>
+                    </a>
+                    <p>
+                        Create a BluePrint WebApplication usig this link
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="col-sm-1" style="min-width: 54px;">
+                    <a class="pull-left" href="javascript:" onclick="SP.UI.ModalDialog.showModalDialog({url:'Properties.aspx?id=1b877313-3c9d-4384-9966-f3239749148e'});return false;">
+                        <img src="http://w12ksp13/_layouts/15/bluePrint/images/settings.png" />
+                    </a>
+                </div>
+                <div class="col-sm-11">
+                    <a href="javascript:" onclick="SP.UI.ModalDialog.showModalDialog({url:'Properties.aspx?id=1b877313-3c9d-4384-9966-f3239749148e'});return false;">
+                        <h4 class="media-heading">
+                            Service Application Properties</h4>
+                    </a>
+                    <p>
+                        Configure properties, such as name and application pool.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="formRow">
+            <div class="col-sm-6">
+                <div class="col-sm-1" style="min-width: 54px;">
+                    <a class="pull-left" href="LicenseMgmt.aspx?id=1b877313-3c9d-4384-9966-f3239749148e">
+                        <img src="http://w12ksp13/_layouts/15/blueprint/images/license_manager.png" />
+                    </a>
+                </div>
+                <div class="col-sm-11">
+                    <a href="LicenseMgmt.aspx?id=1b877313-3c9d-4384-9966-f3239749148e">
+                        <h4 class="media-heading">
+                            License Management</h4>
+                    </a>
+                    <p>
+                        This section allows us to view/modify the license
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="col-sm-1" style="min-width: 54px;">
+                    <a class="pull-left" href="ProcessMgmt.aspx?id=1b877313-3c9d-4384-9966-f3239749148e">
+                        <img src="http://w12ksp13/_layouts/15/images/CentralAdmin_Apps.48x48x32.png" />
+                    </a>
+                </div>
+                <div class="col-sm-11">
+                    <a href="ProcessMgmt.aspx?id=1b877313-3c9d-4384-9966-f3239749148e">
+                        <h4 class="media-heading">
+                            Process Management</h4>
+                    </a>
+                    <p>
+                        This section allows us to Activate/Decative BluePrint Process
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+        </form>
+    </body>
+</html>
